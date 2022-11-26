@@ -1,11 +1,22 @@
-let display = document.getElementById('display');
+const output = document.getElementById("output");
 
-let buttons = Array.from(document.getElementsByClassName('button'));
-buttons.map(button =>{
-    button.addEventListener('click', (e) =>{
-        console.log('clicked');
-        console.log(e);
-        console.log(e.target);
-        console.log(e.target.innerText);
-    })
-});
+function display(arg){
+    output.value += arg;
+}
+function allClear(){
+    output.value = '';
+}
+function del(){
+    output.value = output.value.slice(0,-1);
+}
+function calculate(){
+    output.value = eval(output.value);
+}
+
+
+
+
+
+
+
+
