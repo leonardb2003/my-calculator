@@ -71,8 +71,16 @@ grid-gap: 12px;
 .is-equals{
     background: #0f69d0;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
     .calculator {
-        width: 100%;
+        padding:10px;
+        grid-template-columns: repeat(4, 54px);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap:12px;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(4, 54px);
+        padding: 10px;
     }
 }
